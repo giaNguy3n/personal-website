@@ -16,10 +16,9 @@ const About: React.FC = () => {
               Software Engineer & Problem Solver
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I'm a passionate software engineer with expertise in front-end development, 
-              cloud technologies, and building scalable applications. With a strong foundation 
-              in both frontend and backend development, I enjoy creating innovative solutions 
-              that solve real-world problems.
+              I’m a passionate software engineer specializing in front-end development and AI-powered solutions. 
+              I leverage cloud platforms to architect highly scalable applications, 
+              drawing on a robust, full-stack skill set to build innovative software that solves real-world problems.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
               My journey in technology started with a curiosity about how things work, 
