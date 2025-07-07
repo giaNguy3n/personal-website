@@ -23,10 +23,15 @@ const Header: React.FC = () => {
           <div className="flex-shrink-0">
             <button
               onClick={scrollToTop}
-              className="text-2xl font-bold text-white focus:outline-none hover:text-blue-500 transition-colors"
+              className="focus:outline-none"
               aria-label="Back to top"
             >
-              Gia Nguyen
+              <img
+                src={require('../assets/noBgWhite.png')}
+                alt="Gia Nguyen Logo"
+                className="h-10 w-auto"
+                style={{ maxWidth: 160 }}
+              />
             </button>
           </div>
           
@@ -35,14 +40,14 @@ const Header: React.FC = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-white hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-white hover:text-[#c7a645] px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </button>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-white hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-white hover:text-[#c7a645] px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </button>
@@ -53,7 +58,7 @@ const Header: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-white hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-white hover:text-[#c7a645] focus:outline-none focus:text-[#c7a645]"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -72,14 +77,14 @@ const Header: React.FC = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#2d2f38] border-t">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-white hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                className="text-white hover:text-[#c7a645] block px-3 py-2 text-base font-medium"
               >
                 About
               </button>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-white hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                className="text-white hover:text-[#c7a645] block px-3 py-2 text-base font-medium"
               >
                 Contact
               </button>

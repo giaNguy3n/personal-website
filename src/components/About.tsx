@@ -8,7 +8,7 @@ const About: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          <div className="w-24 h-1 bg-[#c7a645] mx-auto"></div>
         </div>
         <div className="flex justify-center">
           <div className="max-w-2xl">
@@ -16,7 +16,7 @@ const About: React.FC = () => {
               Software Engineer & Problem Solver
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I’m a passionate software engineer specializing in front-end development and AI-powered solutions. 
+              I'm a passionate software engineer specializing in front-end development and AI-powered solutions. 
               I leverage cloud platforms to architect highly scalable applications, 
               drawing on a robust, full-stack skill set to build innovative software that solves real-world problems.
             </p>
