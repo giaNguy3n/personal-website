@@ -12,11 +12,11 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+    <header className="fixed top-0 w-full bg-[#2d2f38] backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-gray-900">Gia Nguyen</h1>
+            <h1 className="text-2xl font-bold text-white">Gia Nguyen</h1>
           </div>
           
           {/* Desktop Navigation */}
@@ -24,14 +24,14 @@ const Header: React.FC = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-white hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
               >
                 About
               </button>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                className="text-white hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
               >
                 Contact
               </button>
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none focus:text-blue-600"
+              className="text-white hover:text-blue-600 focus:outline-none focus:text-blue-600"
             >
               <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 {isMenuOpen ? (
@@ -58,17 +58,17 @@ const Header: React.FC = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-[#2d2f38] border-t">
               <button
                 onClick={() => scrollToSection('about')}
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                className="text-white hover:text-blue-600 block px-3 py-2 text-base font-medium"
               >
                 About
               </button>
 
               <button
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-700 hover:text-blue-600 block px-3 py-2 text-base font-medium"
+                className="text-white hover:text-blue-600 block px-3 py-2 text-base font-medium"
               >
                 Contact
               </button>
