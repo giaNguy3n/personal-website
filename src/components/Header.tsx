@@ -11,12 +11,23 @@ const Header: React.FC = () => {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
+
   return (
     <header className="fixed top-0 w-full bg-[#2d2f38] backdrop-blur-sm z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-white">Gia Nguyen</h1>
+            <button
+              onClick={scrollToTop}
+              className="text-2xl font-bold text-white focus:outline-none hover:text-blue-500 transition-colors"
+              aria-label="Back to top"
+            >
+              Gia Nguyen
+            </button>
           </div>
           
           {/* Desktop Navigation */}
