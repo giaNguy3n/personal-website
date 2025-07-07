@@ -14,9 +14,6 @@ const Contact: React.FC = () => {
           </p>
         </div>
         <div>
-          <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-            Send a Message
-          </h3>
           <form
             action="https://formspree.io/f/xwpbjngy"
             method="POST"
@@ -60,7 +57,7 @@ const Contact: React.FC = () => {
                 required
                 rows={5}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Tell me about your project or opportunity..."
+                placeholder="Drop me a message — I’ll get back soon!"
               ></textarea>
             </div>
             <button
